@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f7f7f7, #e8f0fe);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <label for=" name">Name</label>
+        <input type="text" id="name" name="Firstname" required>
+        <br>
+        <label for="email" >Email</label>
+        <input type="email" pattern="[A-Za-z]{3}" title="enter at least 3 letters" id="email" name="email" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60" required>
+  <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        
+        <br>
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" minlength="8" required>
+         <br>
+        <label for="checkbox">Accept all the terms</label>
+        <input type="checkbox" id="checkbox" required>
+        <br>
+        <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
